@@ -15,7 +15,7 @@ console.log(num1 > num2);
 if (num1 !== 5)  {
   console.log("not egual");
 } else {
-  console.log("grande");
+  console.log("egual");
 }
 
 
@@ -36,12 +36,15 @@ console.log("15 è divisibile per 5", 15 % 5 === 0);
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
-const num3= 8;
-const num4= 0;
-if (num3 === 8 || num3 + num4 === 8 || num3 - num4 === 8 ) {
-  console.log("il valore è 8");
-} 
-
+let num3= 6;
+let num4= 2;
+if (num3 === 8) {
+  console.log("Il num3 è uguale a 8", num3 === 8);
+}  else if (num3 - num4 === 8) { 
+console.log("la differenza dei due numeri è 8", num3-num4===8);
+} else if (num3 + num4 === 8) {
+  console.log("la somma dei due numeri è 8", num3+num4===8);
+}
 
 
 /* ESERCIZIO 5
@@ -51,6 +54,25 @@ if (num3 === 8 || num3 + num4 === 8 || num3 - num4 === 8 ) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let lettotalShoppingCart=500;
+let lettotalShoppingCart2=39;
+let spedizione=10;
+if (lettotalShoppingCart>=50) {
+  console.log("la spedizione è gratuita", lettotalShoppingCart+spedizione-spedizione);
+} else if (lettotalShoppingCart<50) {
+  console.log("la spedizione ha una maggiorazione sul totale", lettotalShoppingCart+spedizione);
+}
+
+if (lettotalShoppingCart2>=50) {
+  console.log("la spedizione è gratuita", lettotalShoppingCart2+spedizione-spedizione);
+} else if (lettotalShoppingCart2<50) {
+  console.log("la spedizione ha una maggiorazione sul totale", lettotalShoppingCart2+spedizione);
+}
+
+
+
+
+
 
 
 
@@ -66,6 +88,25 @@ if (num3 === 8 || num3 + num4 === 8 || num3 - num4 === 8 ) {
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
+let lettotalShoppingCart3= (lettotalShoppingCart*20) /100;
+ if (lettotalShoppingCart3>=50) {
+  console.log("la spedizione è gratuita", lettotalShoppingCart3>=50);
+ } else if (lettotalShoppingCart3<50) {
+  console.log("la spedizione non è gratuita", lettotalShoppingCart3<50);
+ }
+
+ let lettotalShoppingCart4= (lettotalShoppingCart2*20)/100;
+ if (lettotalShoppingCart4>=50) {
+  console.log("la spedizione è gratuita",lettotalShoppingCart4>=50);
+ } else {
+  console.log("la spedizione non è gratuita", lettotalShoppingCart4<50);
+ }
+
+
+
+
+
+
 /* ESERCIZIO 7
   Crea tre variabili, e assegna un valore numerico a ciascuna di esse.
   Utilizzando un blocco condizionale, crea un algoritmo per ordinarle secondo il loro valore, dal più alto al più basso.
@@ -73,6 +114,42 @@ if (num3 === 8 || num3 + num4 === 8 || num3 - num4 === 8 ) {
 */
 
 /* SCRIVI QUI LA TUA RISPOSTA */
+let max;
+let med;
+let min;
+if (num1>num2 && num1>num3) {
+  max=num1;
+  if (num2>num3) {
+    med=num2;
+    min=num3;
+  } else {
+    med=num3;
+    min=num2;
+  }
+}   else if (num2>num1 && num2>num3) {
+     max=num2;
+     if (num1>num3) {
+      med=num1;
+      min=num3;
+     } else {
+      med=num3;
+      min=num1;
+     }
+} else if (num3>num1 && num3>num2) {
+  max=num3;
+  if (num1>num2) {
+    med=num1;
+    min=num3;
+  } else {
+    med=num3;
+    min=num1;
+  }
+} console.log("esercizio 7,numeri in ordine decrescente", max, med, min);
+
+  
+
+
+
 
 
 
